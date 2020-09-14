@@ -1,0 +1,25 @@
+{
+	"name": "jellye2e",
+	"version": "1.0.0",
+	"description": "A Node.js end-to-end testing your app with Cucumber.js and Puppeteer",
+	"main": "index.js",
+	"scripts": {
+		"test": "NODE_ENV=test ./node_modules/.bin/nodemon ./node_modules/.bin/cucumber-js --no-strict",
+		"dev": "NODE_ENV=test-local ./node_modules/.bin/nodemon ./node_modules/.bin/cucumber-js --no-strict"
+	},
+	"keywords": [
+		"cucumber",
+		"puppeteer"
+	],
+	"dependencies": {
+		"cucumber": "^5.0.2",
+		"eslint": "^6.8.0",
+		"node-watch": "^0.6.3",
+		"nodemon": "^2.0.2",
+		"puppeteer": "^1.20.0",
+		"query-selector-shadow-dom": "^0.3.4"
+	},
+	"devDependencies": {
+		"prettier": "1.19.1"
+	}
+}

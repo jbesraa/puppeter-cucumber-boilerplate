@@ -1,0 +1,10 @@
+version: "3"
+services:
+  e2e:
+    build:
+      context: .
+      dockerfile: e2e.Dockerfile
+    command: "yarn test"
+    volumes:
+      - "./:/e2e"
+      - /node_modules/
